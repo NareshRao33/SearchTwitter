@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TwitterSearchFrisco</string>
+    <string name="action_settings">Settings</string>
+    <string name="TWITTER_TOKEN_URL">https://api.twitter.com/oauth2/token</string>
+    <string name="TWITTER_SEARCH_URL">https://api.twitter.com1.1/search/tweets.json?q=</string>
+
+</resources>

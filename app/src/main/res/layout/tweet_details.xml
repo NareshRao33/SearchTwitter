@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/scrim"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/backgroundImage"
+        android:background="#beb4b4"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="@dimen/margin"
+        android:textColor="@color/black"
+        android:id="@+id/tweetDescription" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circle"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_below="@+id/tweetDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/profileImage" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="Profile Name"
+        android:textSize="18sp"
+         android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/profileImage"
+        android:layout_toRightOf="@+id/profileImage"
+        android:layout_toEndOf="@+id/profileImage"
+        android:id="@+id/profilename" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Medium Text"
+        android:textColor="@color/black2"
+        android:id="@+id/alias"
+        android:layout_below="@+id/profilename"
+        android:layout_alignLeft="@+id/profilename"
+        android:layout_alignStart="@+id/profilename" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Small Text"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:id="@+id/tweet"
+        android:layout_below="@+id/profileImage"
+        android:layout_alignLeft="@+id/profileImage"
+        android:layout_alignStart="@+id/profileImage"
+        android:layout_marginLeft="@dimen/margin"
+        android:textSize="15sp" />
+
+</RelativeLayout>
